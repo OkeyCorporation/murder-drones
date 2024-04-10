@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"Murder Drones" fan site</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #40109F;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  height: 160px;
+  position: relative;
+}
+
+footer {
+  background-color: #40109F;
+  color: #fff;
+  padding: 30px;
+  text-align: left;
+  height: 100px;
+  position: relative;
+}
+
+.md {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  width: 500px;
+}
+
+.tg {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  margin: 0;
+  width: 300px;
+  right: 40px;
+}
+
+.what {
+  position: absolute;
+  left: 20px;
+  font-size: 60px;
+}
+
+.text-site {
+  font-size: 60px;
+}
+
+.posts {
+  position: center;
+  text-align: center;
+}
+
+.post-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.post-images img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+/* Модальное окно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  transform: translateY(10%);
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.video {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+}
+
+.youtube-video {
+  width: 600px; /* увеличенная ширина видео */
+  margin: 10px;
+  height: 230px;
+}
+
+.logo-series {
+  width: 100%;
+}
+
+.merch {
+  width: 300px;
+}
+
+.mdiv {
+  text-align: center;
+}
+
+.name {
+  color: white;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="md" src="Murder drones fans.png" alt="">
+</header>
+<img class="tg" src="tg.png" alt="">
+<h1 class="what">Фан сайт по Murder Drones</h1>
+<div class="posts">
+    <br><br><br><br><br><br><br><br><br><br>
+  <h1 class="text-site">Мемы и арты</h1>
+  <div class="post-images">
+    <img src="1.jpeg" alt="" onclick="openModal('1.jpeg')">
+    <img src="2.jpeg" alt="" onclick="openModal('2.jpeg')">
+    <img src="3.jpeg" alt="" onclick="openModal('3.jpeg')">
+    <img src="4.jpeg" alt="" onclick="openModal('4.jpeg')">
+    <img src="5.jpeg" alt="" onclick="openModal('5.jpeg')">
+    <img src="6.jpeg" alt="" onclick="openModal('6.jpeg')">
+    <img src="7.jpeg" alt="" onclick="openModal('7.jpeg')">
+    <img src="8.jpeg" alt="" onclick="openModal('8.jpeg')">
+    <img src="9.jpeg" alt="" onclick="openModal('9.jpeg')">
+    <img src="10.jpeg" alt="" onclick="openModal('10.jpeg')">
+    <img src="50.jpeg" alt="" onclick="openModal('50.jpeg')">
+    <img src="51.jpeg" alt="" onclick="openModal('51.jpeg')">
+    <img src="52.jpeg" alt="" onclick="openModal('52.jpeg')">
+    <img src="53.jpeg" alt="" onclick="openModal('53.jpeg')">
+    <img src="54.jpeg" alt="" onclick="openModal('54.jpeg')">
+    <h2>Хотите больше артов и мемов? Вам сюда: <a href="https://t.me/murder_drones_GLITCH">Тг-канал</a> </h2>
+  </div>
+  <br>
+  <div class="video">
+    <img class="logo-series" src="Последние серии.png" alt="">
+  </div>
+  <div class="video">
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/U7i6fi3z9Nk?si=D0qW8LWMhcNtjHvj" frameborder="0" allowfullscreen></iframe>
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/EOqw86OGIB0?si=5KsxReRxIfk31CXI" frameborder="0" allowfullscreen></iframe>
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/rk0HBqSqpgg?si=EBF4rz9xwLj_wOls" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<br><br>
+<div class="video">
+  <img class="logo-series" src="111.png" alt="">
+  <br><br>
+</div><br>
+<div class="mdiv">
+  <img class="merch" src="Plush_Uzi.png" alt="" onclick="uzi()">
+  <img class="merch" src="N_plush.png" alt="" onclick="n()">
+  <img class="merch" src="Plush_V-01.webp" alt="" onclick="v()">
+  <img class="merch" src="другое.png" alt="" onclick="redirectToStore()">
+</div>
+</div><br><br><br><br>
+<footer>
+  <h3>Создано в качестве поддержки телеграмм канала <a class="name" href="https://t.me/murder_drones_GLITCH">⚠️𝙼𝚞𝚛𝚍𝚎𝚛_𝚍𝚛𝚘𝚗𝚎𝚜_𝚖𝚎𝚖𝚎𝚜 and arts⚠️</a></h3>
+  <h3>Создатель сайта: @ladnoanet</h3>
+  <p>Ok.inc &copy; 2024 Фан сайт по Murder Drones. Все права защищены.</p>
+</footer>
+
+<!-- Модальное окно -->
+<div id="modal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="full-img">
+</div>
+
+<script>
+// Открывает модальное окно с изображением
+function openModal(imgSrc) {
+  var modal = document.getElementById("modal");
+  var modalImg = document.getElementById("full-img");
+  modal.style.display = "block";
+  modalImg.src = imgSrc;
+}
+
+// Закрывает модальное окно
+function closeModal() {
+  var modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+// Перенаправляет пользователя на другую страницу
+function redirectToIndex() {
+  window.location.href = "index.html";
+}
+
+function redirectToStore() {
+  window.location.href = "https://glitchproductions.store/pages/murderdrones";
+}
+
+function uzi() {
+  window.location.href = "https://glitchproductions.store/products/uzi-plush";
+}
+
+function n() {
+  window.location.href = "https://glitchproductions.store/products/n-plush";
+}
+
+function v() {
+  window.location.href = "https://glitchproductions.store/products/v-plush";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"Murder Drones" fan site</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #40109F;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+header img.md {
+  max-width: 100%;
+  height: auto;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.mdiv {
+  text-align: center;
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 600px) {
+  .tg {
+    display: none; /* Скрываем изображение в углу */
+  }
+
+  .md {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .what {
+    font-size: 30px;
+  }
+
+  .text-site {
+    font-size: 30px;
+  }
+
+  .post-images img {
+    width: 90%;
+    margin: 5px;
+  }
+
+  .youtube-video {
+    width: 90%; /* Уменьшаем ширину видео */
+    height: auto; /* Подстраиваем высоту под ширину экрана */
+  }
+
+  .logo-series {
+    max-width: 100%; /* Уменьшаем размер логотипа серии */
+    height: auto;
+  }
+
+  .merch {
+    width: 150px; /* Уменьшаем размер изображений товаров */
+    height: auto;
+  }
+
+  .close {
+    font-size: 25px; /* Уменьшаем размер кнопки закрытия модального окна */
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="md" src="Murder drones fans.png" alt="">
+</header>
+<img class="tg" src="tg.png" alt="">
+<h1 class="what">Фан сайт по Murder Drones</h1>
+<div class="posts">
+    <br><br><br>
+  <h1 class="text-site">Мемы и арты</h1>
+  <div class="post-images">
+    <img src="1.jpeg" alt="">
+    <img src="2.jpeg" alt="">
+    <img src="3.jpeg" alt="">
+    <img src="4.jpeg" alt="">
+    <img src="5.jpeg" alt="">
+    <img src="6.jpeg" alt="">
+    <img src="7.jpeg" alt="">
+    <img src="8.jpeg" alt="">
+    <img src="9.jpeg" alt="">
+    <img src="10.jpeg" alt="">
+    <img src="50.jpeg" alt="">
+    <img src="51.jpeg" alt="">
+    <img src="52.jpeg" alt="">
+    <img src="53.jpeg" alt="">
+    <img src="54.jpeg" alt="">
+    <h2>Хотите больше артов и мемов? Вам сюда: <a href="https://t.me/murder_drones_GLITCH">Тг-канал</a> </h2>
+  </div>
+  <br>
+  <div class="video">
+    <img class="logo-series" src="Последние серии.png" alt="">
+  </div>
+  <div class="video">
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/U7i6fi3z9Nk?si=D0qW8LWMhcNtjHvj" frameborder="0" allowfullscreen></iframe>
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/EOqw86OGIB0?si=5KsxReRxIfk31CXI" frameborder="0" allowfullscreen></iframe>
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/rk0HBqSqpgg?si=EBF4rz9xwLj_wOls" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<br><br>
+<div class="video">
+  <img class="logo-series" src="111.png" alt="">
+  <br><br>
+</div><br>
+<div class="mdiv">
+  <img class="merch" src="Plush_Uzi.png" alt="" onclick="uzi()">
+  <img class="merch" src="N_plush.png" alt="" onclick="n()">
+  <img class="merch" src="Plush_V-01.webp" alt="" onclick="v()">
+  <img class="merch" src="другое.png" alt="" onclick="redirectToStore()">
+</div>
+</div><br><br><br><br>
+<footer>
+  <h3>Создано в качестве поддержки телеграмм канала <a class="name" href="https://t.me/murder_drones_GLITCH">⚠️𝙼𝚞𝚛𝚍𝚎𝚛_𝚍𝚛𝚘𝚗𝚎𝚜_𝚖𝚎𝚖𝚎𝚜 and arts⚠️</a></h3>
+  <h3>Создатель сайта: @ladnoanet</h3>
+  <p>Ok.inc &copy; 2024 Фан сайт по Murder Drones. Все права защищены.</p>
+</footer>
+
+<script>
+// Открывает модальное окно с изображением
+function openModal(imgSrc) {
+  var modal = document.getElementById("modal");
+  var modalImg = document.getElementById("full-img");
+  modal.style.display = "block";
+  modalImg.src = imgSrc;
+}
+
+// Закрывает модальное окно
+function closeModal() {
+  var modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+// Перенаправляет пользователя на другую страницу
+function redirectToIndex() {
+  window.location.href = "index.html";
+}
+
+function redirectToStore() {
+  window.location.href = "https://glitchproductions.store/pages/murderdrones";
+}
+
+function uzi() {
+  window.location.href = "https://glitchproductions.store/products/uzi-plush";
+}
+
+function n() {
+  window.location.href = "https://glitchproductions.store/products/n-plush";
+}
+
+function v() {
+  window.location.href = "https://glitchproductions.store/products/v-plush";
+}
+</script>
+
+</body>
+</html>
